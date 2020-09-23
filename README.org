@@ -1,0 +1,6 @@
+* CBR
+  Case Based Reasoning
+** Structure of Knowledge Base
+  - symptoms :: directory containing script that detects symptoms from the system output .toml file
+  - case :: directory containing toml describing the case
+  - solutions :: directory containing script to solve the case

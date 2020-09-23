@@ -1,0 +1,7 @@
+[symptoms]
+integer=5
+string="mystring"
+bool=true
+
+[solution]
+script="solutions1.sh"
