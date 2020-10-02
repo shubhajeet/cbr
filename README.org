@@ -1,6 +1,24 @@
-* CBR
-  Case Based Reasoning
+* CBR (Case Based Reasoning)
+  This project aims to implement a simplistic Case Based Reasoning system to evaluate the health of the system and suggest a solution.
+  
 ** Structure of Knowledge Base
   - symptoms :: directory containing script that detects symptoms from the system output .toml file
   - case :: directory containing toml describing the case
   - solutions :: directory containing script to solve the case
+  
+* Syntax
+```bash
+$ python cbr/cbr.py -h
+usage: cbr.py [-h] {check,diagnose,treat} ...
+
+Case Based Reasoning Assistance
+
+positional arguments:
+  {check,diagnose,treat}
+    check               check sub-command help
+    diagnose            diagnose sub-command help
+    treat               treat sub-command help
+
+optional arguments:
+  -h, --help            show this help message and exit
+```
