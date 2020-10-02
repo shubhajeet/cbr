@@ -7,7 +7,7 @@
   - solutions :: directory containing script to solve the case
   
 * Syntax
-```bash
+#+BEGIN_SRC bahs
 $ python cbr/cbr.py -h
 usage: cbr.py [-h] {check,diagnose,treat} ...
 
@@ -21,4 +21,25 @@ positional arguments:
 
 optional arguments:
   -h, --help            show this help message and exit
-```
+#+END_SRC
+
+** Example Case
+#+BEGIN_SRC toml
+[symptoms]
+integer=5
+string="my string"
+bool=true
+
+[solution]
+script="solution1.sh"
+#+END_SRC
+
+** Example symptoms
+Here is a dummy symptoms example.
+#+BEGIN_SRC bash
+#!/bin/usr/env bash
+echo "integer=4"
+echo "string='my string'"
+echo "bool=true"
+#+END_SRC
+The most important part of the above script is that it should output the key value pair in toml syntax.
